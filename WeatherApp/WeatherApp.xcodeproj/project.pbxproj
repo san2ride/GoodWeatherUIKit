@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F73FBD612C5319D0007B90C9 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73FBD602C5319D0007B90C9 /* WeatherCell.swift */; };
 		F74F26B22C52FC9100C9EE7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F26B12C52FC9100C9EE7A /* AppDelegate.swift */; };
 		F74F26B42C52FC9100C9EE7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F26B32C52FC9100C9EE7A /* SceneDelegate.swift */; };
 		F74F26B92C52FC9100C9EE7A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F74F26B82C52FC9100C9EE7A /* Base */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F73FBD602C5319D0007B90C9 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		F74F26AE2C52FC9100C9EE7A /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F74F26B12C52FC9100C9EE7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F74F26B32C52FC9100C9EE7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F73FBD5F2C5319B6007B90C9 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F73FBD602C5319D0007B90C9 /* WeatherCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
 		F74F26A52C52FC9100C9EE7A = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				F74F26C72C5308C200C9EE7A /* Controllers */,
+				F73FBD5F2C5319B6007B90C9 /* Custom Cells */,
 				F74F26C52C5308A800C9EE7A /* Storyboards */,
 				F74F26C62C5308B600C9EE7A /* Delegates */,
 				F74F26BA2C52FC9400C9EE7A /* Assets.xcassets */,
@@ -167,6 +178,7 @@
 			files = (
 				F74F26C92C5308F500C9EE7A /* WeatherListTableViewController.swift in Sources */,
 				F74F26B22C52FC9100C9EE7A /* AppDelegate.swift in Sources */,
+				F73FBD612C5319D0007B90C9 /* WeatherCell.swift in Sources */,
 				F74F26CB2C53095500C9EE7A /* AddWeatherCityViewController.swift in Sources */,
 				F74F26B42C52FC9100C9EE7A /* SceneDelegate.swift in Sources */,
 			);
