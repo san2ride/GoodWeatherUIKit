@@ -21,7 +21,9 @@ class WeatherListTableViewController: UITableViewController, AddWeatherDelegate 
         weatherListViewModel.addWeatherViewModel(vm)
         self.tableView.reloadData()
     }
-    
+}
+
+extension WeatherListTableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -36,15 +38,15 @@ class WeatherListTableViewController: UITableViewController, AddWeatherDelegate 
         let weatherVM = weatherListViewModel.modelAt(indexPath.row)
         
         cell.configure(weatherVM)
-        
-        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
-    
+}
+
+extension WeatherListTableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "AddWeatherCityViewController" {
             prepareSegueForAddWeatherCityViewController(segue: segue)
