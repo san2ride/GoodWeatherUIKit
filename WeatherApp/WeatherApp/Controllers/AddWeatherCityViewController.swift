@@ -10,15 +10,11 @@ import UIKit
 class AddWeatherCityViewController: UIViewController {
     
     @IBOutlet weak var cityNameTextField: UITextField!
+    private var addWeatherVM = AddWeatherViewModel()
     
     @IBAction func saveCityButtonPressed() {
         if let city = cityNameTextField.text {
-            let weatherURL = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=ba0d703a8332b5fa2f3a398e9c401321&units=imperial")!
-            
-            let weatherResource = Resource<Any>(url: weatherURL) { data in
-                return data
-            }
-            WebService().load(resource: weatherResource) { result in
+            addWeatherVM.addWeather(for: city) { (vm) in
                 
             }
         }
