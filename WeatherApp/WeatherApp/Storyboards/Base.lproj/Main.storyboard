@@ -164,7 +164,7 @@
             </objects>
             <point key="canvasLocation" x="2538.1679389312976" y="-21.126760563380284"/>
         </scene>
-        <!--Settings Table View Controller-->
+        <!--Settings-->
         <scene sceneID="5kB-RT-kXs">
             <objects>
                 <tableViewController id="sOX-sK-SUf" customClass="SettingsTableViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -173,7 +173,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kQx-Sh-bZt">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsCell" id="kQx-Sh-bZt">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kQx-Sh-bZt" id="Swp-0n-BeA">
@@ -187,7 +187,9 @@
                             <outlet property="delegate" destination="sOX-sK-SUf" id="OhZ-qe-NW8"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="IYL-Jz-umj"/>
+                    <navigationItem key="navigationItem" title="Settings" id="IYL-Jz-umj">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Yca-Sc-QLH"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="avR-9l-QkC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
