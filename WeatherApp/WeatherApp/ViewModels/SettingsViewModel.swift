@@ -31,6 +31,15 @@ class SettingsViewModel {
     var selectedUnit: Unit {
         get {
             let userDefaults = UserDefaults.standard
+            var unitValue = ""
+            if let value = userDefaults.value(forKey: "unit") as? String {
+                unitValue = value
+            }
+            return Unit(rawValue: unitValue)!
+        }
+        /*
+        get {
+            let userDefaults = UserDefaults.standard
             if let value = userDefaults.value(forKey: "unit") as? String,
                let unit = Unit(rawValue: value) {
                 return unit
@@ -38,6 +47,7 @@ class SettingsViewModel {
                 return .fahrenheit
             }
         }
+        */
         set {
             let userDefaults = UserDefaults.standard
             userDefaults.set(newValue.rawValue, forKey: "unit")
