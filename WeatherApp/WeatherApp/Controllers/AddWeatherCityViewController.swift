@@ -30,14 +30,4 @@ class AddWeatherCityViewController: UIViewController {
     @IBAction func close() {
         self.dismiss(animated: true, completion: nil)
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        //self.navigationController?.navigationBar.prefersLargeTitles = true
-    }
-    
-
-    
-
 }
