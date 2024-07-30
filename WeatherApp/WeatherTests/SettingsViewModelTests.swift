@@ -1,6 +1,6 @@
 //
-//  SettingsViewModelTest.swift
-//  WeatherApp
+//  SettingsViewModelTests.swift
+//  WeatherTests
 //
 //  Created by Jason Sanchez on 7/29/24.
 //
@@ -8,7 +8,7 @@
 import XCTest
 @testable import WeatherApp
 
-final class SettingsViewModelTest: XCTestCase {
+final class SettingsViewModelTests: XCTestCase {
 
     private var settingsVM: SettingsViewModel!
     
@@ -37,4 +37,3 @@ final class SettingsViewModelTest: XCTestCase {
         userDefaults.removeObject(forKey: "unit")
     }
 }
-
